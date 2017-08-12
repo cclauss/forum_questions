@@ -1,0 +1,66 @@
+[
+  {
+    "selected" : false,
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "nodes" : [
+      {
+        "selected" : false,
+        "frame" : "{{120, 224}, {80, 32}}",
+        "class" : "Button",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "action" : "calc_button_action",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "title" : "Button",
+          "uuid" : "94A050F1-B4EA-4C06-AAAC-024EEDF9FED0",
+          "class" : "Button",
+          "name" : "calc_button",
+          "font_size" : 15
+        }
+      },
+      {
+        "selected" : false,
+        "frame" : "{{0, 320}, {320, 123}}",
+        "class" : "DatePicker",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "uuid" : "C6CEF573-8031-4B4B-B060-005C59C3A2DE",
+          "frame" : "{{0, 132}, {320, 216}}",
+          "name" : "cal",
+          "class" : "DatePicker",
+          "mode" : 1
+        }
+      },
+      {
+        "selected" : true,
+        "frame" : "{{146, 34}, {150, 32}}",
+        "class" : "Label",
+        "nodes" : [
+
+        ],
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "23BDAF4E-AD80-47F5-92B3-9CCA1FB89455",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Label",
+          "name" : "txt9",
+          "font_size" : 18
+        }
+      }
+    ],
+    "attributes" : {
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    }
+  }
+]
