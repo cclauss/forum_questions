@@ -57,15 +57,21 @@ def write_to_csv(filename, data_list, field_name_list=None):
 	'''
 	This function is only concerned with writing your list to the csv file.
 	'''
-	fexists=exists(filename) # We set a var to see if the file exists
+	# below line is longer required!
+	#fexists=exists(filename) # We set a var to see if the file exists
 	
 	
 	with open(filename, 'a') as csvfile:
 		csvwriter = csv.writer(csvfile, delimiter=',',
 		quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		
+		'''
 		if not fexists and field_name_list != None:
 			csvwriter.writerow(field_name_list)
+		'''
+		# use @ccc's solution to see if the file ptr is at begining of the file
+		if csvfile.tell() == 0:  # if we are at the beginning of the file
+			csvwriter.writerow(_field_names)  # then write out the header
 			
 		csvwriter.writerow(data_list)
 		
