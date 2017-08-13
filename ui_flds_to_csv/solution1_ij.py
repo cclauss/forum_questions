@@ -4,7 +4,6 @@ from os.path import exists
 import csv
 
 _csv_filename = 'myoutput.csv'
-_field_names = ('Year', 'Month', 'Day', 'High Price')
 
 def calc_button_action(sender):
 	'''
